@@ -1,0 +1,16 @@
+product_homepage:
+    path:     /
+    defaults: { _controller: ProductBundle:Default:index }
+
+more:
+    path:     /more_items
+    defaults: { _controller: ProductBundle:Default:more }
+
+extend_product:
+    path:      /extend_product/{id}
+    defaults: { _controller: ProductBundle:Default:extendProduct }
+
+pdf_created:
+    path:     /pdf_img={id}
+    defaults: { _controller: ProductBundle:Default:getPdfCreated }
+    methods:  [GET]
